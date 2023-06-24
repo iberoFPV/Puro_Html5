@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <!-- Codificación-->
+    <meta charset="utf-8">
+    <!-- Título para el navegador y los buscadores -->
+    <title>Ejercicios html5</title>
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Ejercicios html5">
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Autor de la página -->
+    <meta name="author" content="Bruno Orgilles">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="html5.png" >
+    <!-- Carga de normalize y css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+    <header>
+        <h1>· Formulario sencillo</h1> <!-- Titulo -->
+    </header>
+    <main>
+        <form action="https://www.google.es/search" name="registro" method="get">
+            Busca en Google
+            <input type="text" name="q"> <br>
+            <button>Enviar</button>
+        </form>
+
+        <form action="https://www.booking.com/searchresults.es.html" name="bookingForm" method="get">
+            Encuentra tu hotel en Booking:
+            <input type="text" name="ss" placeholder="Destino" required> <br>
+            <input type="date" name="checkin_date" required> <br>
+            <input type="date" name="checkout_date" required> <br>
+            <input type="number" name="group_adults" min="1" max="30" placeholder="Adultos" required> <br>
+            <input type="number" name="group_children" min="0" max="10" placeholder="Niños"> <br>
+            <button type="submit">Buscar</button>
+
+        <form action="https://www.youtube.com/results" method="get">
+            Buscar en YouTube:
+            <input type="text" name="search_query" placeholder="Ingrese su búsqueda" required> <br>
+            <button type="submit">Buscar</button>
+        </form>
+        
+        <form action="https://stackoverflow.com/search" method="get">
+            Buscar en Stack Overflow:
+            <input type="text" name="q" placeholder="Ingrese su búsqueda" required> <br>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <form action="https://es.wikipedia.org/wiki/Especial:Buscar" method="get">
+            Buscar en Wikipedia:
+            <input type="text" name="search" placeholder="Ingrese su búsqueda" required> <br>
+            <button type="submit">Buscar</button>
+        </form>
+        
+        
+    </main>
+    <nav>
+        <a href="index_formularios.html">Volver a la pag. principal de Formularios</a>
+    </nav>
+
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

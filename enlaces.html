@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <!-- Codificación-->
+    <meta charset="utf-8">
+    <!-- Título para el navegador y los buscadores -->
+    <title>Ejercicios html5</title>
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Ejercicios html5">
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Autor de la página -->
+    <meta name="author" content="Bruno Orgilles">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="html5.png" >
+    <!-- Carga de normalize y css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <h1>Etiquetas de enlace &lt;a href="">&lt;/a></h1>
+    <p>Lo más importante de los documentos HTML son los enlaces. Ya que mediante los enlaces en HTML podemos comunicar una página con otra. De esta forma, enlazando documentos HTML podemos acabar tejiendo lo que es Internet.</p>
+    <p>Si bien, en el enlace, podemos indicar el destino que queremos darle a dicho enlace. Eso lo podemos hacer mediante el atributo target. Los posibles valores que admite el atributo target son: <br>
+
+        <strong>_blank</strong>, el agente de usuario intentará abrir el enlace en una nueva ventana. La nueva ventana no tendrá nombre. <br>
+        <strong>_self</strong>, el agente de usuario intentará abrir el enlace en el mismo marco donde está en código actual. <br>
+        <strong>_parent</strong>, el agente de usuario intentará abrir el enlace en el frameset inmediatamente superior al que se encuentra la página. Esto suele suceder cuando tenemos el enlace en un área de frames. <br>
+        <strong>_top</strong>, el agente de usuario intentará abrir el enlace en la ventana padre. En el caso de que exista un frameset lo eliminará y se hará con toda la ventana.
+        nombre_marco, se podrá indicar el nombre de un frame. En este caso el agente de usuario intentará abrir el enlace en el frame que coincida con el nombre. En el caso de no existir un frame con ese nombre lo abrirá en una nueva ventana, asignándole dicho nombre</p>
+
+
+    <nav>
+        <a href="index.html">Volver a la pag. principal</a>
+    </nav>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

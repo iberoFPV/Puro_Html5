@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <!-- Codificación-->
+    <meta charset="utf-8">
+    <!-- Título para el navegador y los buscadores -->
+    <title>Ejercicios html5</title>
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Ejercicios html5">
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Autor de la página -->
+    <meta name="author" content="Bruno Orgilles">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="html5.png" >
+    <!-- Carga de normalize y css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#fafafa">
+    <!-- Lienzo canvas -->
+    <style>
+        /* Estilos para el lienzo canvas */
+        #myCanvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>· Canvas</h1> <!-- Titulo -->
+    </header>
+    <main>
+        <canvas id="myCanvas" width="400" height="200"></canvas>
+        <br>
+        <button onclick="clearCanvas()">Borrar</button>
+        <input type="color" id="colorPicker" onchange="changeColor()">
+
+
+
+    </main>
+    <ul>
+        <h3>- Enlaces de retorno</h3>
+        <li><a href="multimedia.html">Volver al inicio Multimedia</a></li>
+        <li><a href="index.html">Volver a la pag. principal</a></li>
+    </ul>
+
+    <script>
+        // Obtenemos el elemento canvas
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+    
+        // Variables para guardar el estado de dibujo y el color actual
+        var isDrawing = false;
+        var currentColor = "#000000";
+    
+        // Agregamos eventos para controlar el dibujo
+        canvas.addEventListener("mousedown", startDrawing);
+        canvas.addEventListener("mousemove", draw);
+        canvas.addEventListener("mouseup", stopDrawing);
+    
+        // Función para comenzar el dibujo
+        function startDrawing(event) {
+            isDrawing = true;
+            var rect = canvas.getBoundingClientRect();
+            var x = event.clientX - rect.left;
+            var y = event.clientY - rect.top;
+            context.beginPath();
+            context.moveTo(x, y);
+        }
+
+        // Función para dibujar
+        function draw(event) {
+            if (!isDrawing) return;
+            
+            var rect = canvas.getBoundingClientRect();
+            var x = event.clientX - rect.left;
+            var y = event.clientY - rect.top;
+            
+            context.lineTo(x, y);
+            context.strokeStyle = currentColor;
+            context.lineWidth = 2;
+            context.stroke();
+        }
+
+        // Función para detener el dibujo
+        function stopDrawing() {
+            isDrawing = false;
+        }
+
+        // Función para borrar el contenido del lienzo
+        function clearCanvas() {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        // Función para cambiar el color de dibujo
+        function changeColor() {
+            currentColor = document.getElementById("colorPicker").value;
+        }
+    </script>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

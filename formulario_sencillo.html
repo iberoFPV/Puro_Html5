@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <!-- Codificación-->
+    <meta charset="utf-8">
+    <!-- Título para el navegador y los buscadores -->
+    <title>Ejercicios html5</title>
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Ejercicios html5">
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Autor de la página -->
+    <meta name="author" content="Bruno Orgilles">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="html5.png" >
+    <!-- Carga de normalize y css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+    <header>
+        <h1>· Formulario sencillo</h1> <!-- Titulo -->
+    </header>
+    <main>
+        <form action="/registrar-cliente/" name="registro" method="get" autocomplete="on"> <!-- enctype="multipart/form-data" ha de ir con los method post para que los archivos se envien -->
+            <input type="hidden" name="company" value="ConquerBlocks"><!-- El ordenador no lo renderiza como input pero se envia aunqe el usuario no lo vea, para enviar datos al servidor sin que el usuario tenga que verlo -->
+            
+            <p>
+                Nombre
+                <input type="text" name="nombre" maxlength="10" placeholder="Nombre">
+            </p>
+            <p>
+                Apellidos
+                <input type="text" name="apellidos" placeholder="Apellidos" disabled><!-- Disable para desactivar el input -->
+            </p>
+            <p>
+                Pais
+                <input type="text" name="pais" value="España"><!-- Valor por defecto para base de datos ya guardadas -->
+            </p>
+            <p>
+                Edad
+                <input type="number" name="edad" min="0" max="100">
+            </p>
+            <p>
+                Contraseña
+                <input type="password" name="clave">
+            </p>
+            <p>
+                Indica tu pagina web
+                <input type="url" name="url">
+            </p>
+            <p>
+                Indica tu email
+                <input type="email" name="email">
+            </p>
+            <p>
+                Introduzca su foto
+                <input type="file" name="foto"><!-- solo con metodo post no con get -->
+            </p>
+
+            <button>Enviar</button>
+            <input type="submit" value="Enviar a otro sitio"><!-- Otro boton -->
+            <input type="reset" value="Borrar el formulario">
+        </form>
+    </main>
+    <nav>
+        <a href="index_formularios.html">Volver a la pag. principal de Formularios</a>
+    </nav>
+
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

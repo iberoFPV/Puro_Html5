@@ -1,0 +1,185 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <!-- Codificación-->
+    <meta charset="utf-8">
+    <!-- Título para el navegador y los buscadores -->
+    <title>Ejercicios html5</title>
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Ejercicios html5">
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Autor de la página -->
+    <meta name="author" content="Bruno Orgilles">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="html5.png" >
+    <!-- Carga de normalize y css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+    <header>
+        <h1>· Resto de inputs</h1> <!-- Titulo -->
+    </header>
+    <main> <!-- Ponemos de name q para que lo busque en google -->
+        <h3>- Input tipe serch</h3> <!-- Crea una x para borrar lo escrito en el formulario -->
+        <form action="https://www.google.es/search" name="registro" method="get">
+            <p>Introduce tu busqueda</p>
+            <input type="search" name="q" placeholder="Buscar"> <br>
+            <button>Enviar</button>
+        </form>
+
+        <h3>- Input tipe color</h3> <!-- Seleccionar un color -->
+        <form action="https://www.google.es/search" name="registro" method="get">
+            <p>Selecciona tu color</p>
+            <input type="color" name="q" placeholder="Buscar"> <br>
+            <button>Enviar</button>
+        </form>
+
+        <h3>- Input tipos de fecha</h3> <!-- Introducir fechas -->
+        <form action="https://www.google.es/search" name="registro" method="get">
+            <p>Introduce tu fecha de nacimiento</p>
+            <input type="date" name="q"> <br>
+            <button>Enviar</button>
+        </form>
+
+        <h3>- Input time </h3> <!-- Seleccionar la hora -->
+        <form action="https://www.google.es/search" name="registro" method="get">
+            <p>Introduce la hora de tu visita </p>
+            <input type="time" name="meeting_hour"> <br>
+            <button>Enviar</button>
+        </form>
+
+        <h3>- Input tipo datetime-local</h3> <!-- Introducir fechas y horas -->
+        <form action="https://www.google.es/search" name="registro" method="get">
+            <p>Introduce tu fecha de nacimiento y la hora de tu nacimiento</p>
+            <input type="datetime-local" name="q"> <br>
+            <button>Enviar</button>
+        </form>
+
+        <h3>- Input tipo month</h3> <!-- Seleccionar un mes y su año -->
+        <form action="https://www.google.es/search" name="registro" method="get">
+            <p>Introduce un mes</p>
+            <input type="month" name="q"> <br>
+            <button>Enviar</button>
+        </form>
+
+        <h3>- Input tipo week</h3> <!-- Introducir semanas -->
+        <form action="https://www.google.es/search" name="registro" method="get">
+            <p>Introduce la semana</p>
+            <input type="week" name="q"> <br>
+            <button>Enviar</button>
+        </form>
+
+        <h3>- Input tipo tel</h3> <!-- Introducir numeros de telefono -->
+        <form action="https://www.google.es/search" name="registro" method="get">
+            <p>Introduce tu numero de telefono</p>
+            <input type="tel" name="q"> <br>
+            <button>Enviar</button>
+        </form>
+
+        <h3>- Input tipo range</h3> <!-- Introducir valores con un deslizador -->
+        <form action="https://www.google.es/search" name="registro" method="get">
+            <p>Introduce su experencia en html</p>
+            <input type="range" min="0" max="10" name="q"> <br>
+            <button>Enviar</button>
+        </form>
+
+        <h3>- Input tipo checkbox</h3> <!-- Sirve para hacer selecciones de valores, renderiza on y off-->
+        <form action="#" method="get">
+            <!-- Cada input deve de contener su propio name para su envio al servidor  -->
+            <p>Introduce los ingredientes de su pitzza</p>
+            <!-- Con los ID y LOS LABEL hacemos que los textos se asocien al input y que sean seleccionables -->
+            <input type="checkbox"name="Tomate" id="Tomate"> 
+            <label for="Tomate">Tomate</label> <br>
+            <input type="checkbox"name="Queso" id="Queso">
+            <label for="Queso">Queso</label><br>
+            <input type="checkbox"name="Jamon" id="Jamon">
+            <label for="Jamon">Jamon</label><br>
+            <input type="checkbox"name="Cebolla" id="Cebolla">
+            <label for="Cebolla">Cebolla</label><br>
+            <button>Enviar</button>
+        </form>
+
+        <h3>- Input tipo radiobutton (radio)</h3> <!--Botones escluyentes por eso llevan el mismo name para marcar uno y que se desmarque el otro para solo enviar un solo valor al servidor -->
+        <form action="#" name="registro" method="get">
+            <!-- Necesitan de value para enviar los datos al servidor -->
+            <p>Seleccione el color deseado de sus zapatillas</p>
+            <input type="radio" name="color" value="Negro" id="Negro">
+            <label for="Negro">Negro</label><br>
+            <input type="radio" name="color" value="Blanco" id="Blanco">
+            <label for="Blanco">Blanco</label><br>
+            <input type="radio" name="color" value="Azul" id="Azul">
+            <label for="Azul">Azul</label><br>
+            <button>Enviar</button>
+        </form>
+
+        <h3>- Input tipo textarea</h3> <!-- Area de texto -->
+        <form action="#" name="registro" method="get">
+            <label for="bio">Biografía</label><br>
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea><br>
+            <button>Enviar</button>
+        </form>
+
+        <h3>- Input tipo select</h3> <!-- Desplegable selector -->
+        <form action="#" name="registro" method="get">
+            <label for="size">Seleccione la talla</label>
+            <select name="size" id="size" required><!-- Required para que sea de obligado seleccionar un valor -->
+                <option value="">----------</option>
+                <option value="39">Talla 39</option>
+                <option value="40">Talla 40</option>
+                <option value="41">Talla 41</option>
+                <option value="42">Talla 42</option>
+                <option value="43">Talla 43</option>
+            </select>
+            <button>Enviar</button>
+        </form>
+
+        <h3>- Formulario englobando Fieldset y su legend </h3> <!-- Desplegable selector -->
+        <form action="#" name="registro" method="get">
+
+            <fieldset>
+                <legend><strong>Persona</strong></legend>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="birthday">Cumpleaños:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+            </fieldset>
+            <button>Enviar</button>
+
+        </form>
+
+    </main>
+    <nav>
+        <a href="index_formularios.html">Volver a la pag. index formularios</a> <br>
+        <a href="index.html">Volver a la pag. principal</a>
+    </nav>
+
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
