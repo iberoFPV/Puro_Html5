@@ -10,16 +10,17 @@ Inside this repository, you will find a carefully crafted assortment of exercise
 
 Within these exercises, you will encounter the use of various HTML tags, such as:
 
-Headings (<h1>, <h2>, <h3>, etc.) 📝
-Paragraphs (<p>) 📄
-Ordered lists (<ol>) and unordered lists (<ul>) 📋
-Images (<img>) 🖼️
-Links (<a>) 🔗
-Tables (<table>) 🗂️
-Forms (<form>) and form elements (<input>, <select>, etc.) 📝📋
-Structural elements (<div>, <span>, <header>, <footer>, etc.) 🏗️
-Multimedia elements (<audio>, <video>) 🎵🎥
-Semantic elements (<article>, <section>, <nav>, <aside>, etc.) 📖
+Headings (&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, etc.) 📝
+Paragraphs (&lt;p&gt;) 📄
+Ordered lists (&lt;ol&gt;) and unordered lists (&lt;ul&gt;) 📋
+Images (&lt;img&gt;) 🖼️
+Links (&lt;a&gt;) 🔗
+Tables (&lt;table&gt;) 🗂️
+Forms (&lt;form&gt;) and form elements (&lt;input&gt;, &lt;select&gt;, etc.) 📝📋
+Structural elements (&lt;div&gt;, &lt;span&gt;, &lt;header&gt;, &lt;footer&gt;, etc.) 🏗️
+Multimedia elements (&lt;audio&gt;, &lt;video&gt;) 🎵🎥
+Semantic elements (&lt;article&gt;, &lt;section&gt;, &lt;nav&gt;, &lt;aside&gt;, etc.) 📖
+
 Each exercise is designed to help you practice using and combining these tags to create content-rich web pages that are properly structured. 💡
 
 We invite you to visit our website at the following address: https://puro-html5.netlify.app/.
