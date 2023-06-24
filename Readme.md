@@ -22,7 +22,7 @@ Multimedia elements (<audio>, <video>) 🎵🎥
 Semantic elements (<article>, <section>, <nav>, <aside>, etc.) 📖
 Each exercise is designed to help you practice using and combining these tags to create content-rich web pages that are properly structured. 💡
 
-We invite you to visit our website at the following address: https://puro-html5.netlify.app/.😊
+We invite you to visit our website at the following address: https://puro-html5.netlify.app/.
 
 On our website, we have opted for a minimalist and content-focused experience. We have exclusively relied on using HTML5 to create a simple yet effective design. This means that we have not implemented any visual CSS layers nor used any backend JavaScript functionalities.
 
