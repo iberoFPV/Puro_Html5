@@ -10,16 +10,16 @@ Inside this repository, you will find a carefully crafted assortment of exercise
 
 Within these exercises, you will encounter the use of various HTML tags, such as:
 
-Headings (&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, etc.) 📝
-Paragraphs (&lt;p&gt;) 📄
-Ordered lists (&lt;ol&gt;) and unordered lists (&lt;ul&gt;) 📋
-Images (&lt;img&gt;) 🖼️
-Links (&lt;a&gt;) 🔗
-Tables (&lt;table&gt;) 🗂️
-Forms (&lt;form&gt;) and form elements (&lt;input&gt;, &lt;select&gt;, etc.) 📝📋
-Structural elements (&lt;div&gt;, &lt;span&gt;, &lt;header&gt;, &lt;footer&gt;, etc.) 🏗️
-Multimedia elements (&lt;audio&gt;, &lt;video&gt;) 🎵🎥
-Semantic elements (&lt;article&gt;, &lt;section&gt;, &lt;nav&gt;, &lt;aside&gt;, etc.) 📖
+Headings (&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, etc.) 📝<br>
+Paragraphs (&lt;p&gt;) 📄<br>
+Ordered lists (&lt;ol&gt;) and unordered lists (&lt;ul&gt;) 📋<br>
+Images (&lt;img&gt;) 🖼️<br>
+Links (&lt;a&gt;) 🔗<br>
+Tables (&lt;table&gt;) 🗂️<br>
+Forms (&lt;form&gt;) and form elements (&lt;input&gt;, &lt;select&gt;, etc.) 📝📋<br>
+Structural elements (&lt;div&gt;, &lt;span&gt;, &lt;header&gt;, &lt;footer&gt;, etc.) 🏗️<br>
+Multimedia elements (&lt;audio&gt;, &lt;video&gt;) 🎵🎥<br>
+Semantic elements (&lt;article&gt;, &lt;section&gt;, &lt;nav&gt;, &lt;aside&gt;, etc.) 📖<br>
 
 Each exercise is designed to help you practice using and combining these tags to create content-rich web pages that are properly structured. 💡
 
