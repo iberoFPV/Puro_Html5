@@ -1,0 +1,174 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <!-- Codificación-->
+    <meta charset="utf-8">
+    <!-- Título para el navegador y los buscadores -->
+    <title>Ejercicios html5</title>
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Ejercicios html5">
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Autor de la página -->
+    <meta name="author" content="Bruno Orgilles">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="html5.png" >
+    <!-- Carga de normalize y css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#fafafa">
+
+    <!-- Enlace a CKeditor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/38.1.0/classic/ckeditor.js"></script>
+    <!-- Metemos jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <!-- Instalación para el selec2 libreria JS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>· Etiquetas interativas</h1> <!-- Titulo -->
+    </header>
+    <main>
+        <h2>- Ejemplo atributo hidden</h2>
+        <section>
+            <h3>Sección 1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium suscipit quasi optio. Optio velit laboriosam quibusdam tempora harum quam, fugiat vero perspiciatis nisi voluptatem doloremque id adipisci, reprehenderit, illum animi?</p>
+        </section>
+
+        <section hidden> <!-- Hidden oculta el contenido de la seccion o a la etiqueta a la que se lo pongamos -->
+            <h3>Sección 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque hic qui ratione obcaecati deserunt aliquid quis sit culpa numquam amet distinctio est, assumenda saepe minima quaerat architecto facilis reiciendis sequi.</p>
+        </section>
+
+        <h2>- Etiqueta Details</h2>
+
+        <details><!-- Crea un despplegable de todo el contenido de la etiqueta -->
+            <section>
+                <h3>Sección 1</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium suscipit quasi optio. Optio velit laboriosam quibusdam tempora harum quam, fugiat vero perspiciatis nisi voluptatem doloremque id adipisci, reprehenderit, illum animi?</p>
+            </section>
+    
+            <section>
+                <h3>Sección 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque hic qui ratione obcaecati deserunt aliquid quis sit culpa numquam amet distinctio est, assumenda saepe minima quaerat architecto facilis reiciendis sequi.</p>
+            </section>
+        </details>
+
+        <h2>- Etiqueta Summary</h2>
+        <details>
+            <!-- La etiqueta summary nos crea lo mismo que details pero nos deja personalizar el nombre que queramos que salga  -->
+            <section>
+                <summary>Mas detalles</summary>
+                <h3>Sección 1</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium suscipit quasi optio. Optio velit laboriosam quibusdam tempora harum quam, fugiat vero perspiciatis nisi voluptatem doloremque id adipisci, reprehenderit, illum animi?</p>
+            </section>
+        </details>
+
+        <h2>- Etiqueta Dialog</h2>
+
+            <button onclick="document.getElementById('dialogo1').open = true">Abrir diálogo</button>
+
+            <dialog id="dialogo1"><!-- Por defecto se vera todo centrado en pantalla -->
+                <section>
+                    <h3>Sección 1</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium suscipit quasi optio. Optio velit laboriosam quibusdam tempora harum quam, fugiat vero perspiciatis nisi voluptatem doloremque id adipisci, reprehenderit, illum animi?</p>
+                    <button onclick="document.getElementById('dialogo1').close()">Cerrar</button>
+                </section>
+            </dialog>
+
+            <h2>- Elemento Popovers</h2>
+            <!-- Crea un mensaje en medio de la pantalla y que sale por encima de todo el contenido que haya -->
+            <button popovertarget="message" popovertargetaction="toogle">Mostrar</button>
+
+            <div id="message" popover>
+
+                <p><strong>Alerta!</strong>: Has recibido un correo de <strong>Conquer</strong>.</p>
+
+                <button popovertarget="message" popovertargetaction="toogle">Cerrar</button>
+            </div>
+
+            <h2>- Ejemplo datalist</h2>
+            <!-- Crea un tipo selector, pero el usuario puede seguir escribiendo lo que quiera -->
+            <datalist id="weblag">
+                <option value="Html">Html</option>
+                <option value="Css">Css</option>
+                <option value="JavaScript">JavaScript</option>
+
+            </datalist>
+            <!-- Devemos de asociar el input a ide de datalist -->
+            <p>
+                Indica tu lenguaje favorito:
+                <input type="text" list="weblag">
+            </p>
+
+            <h2>- Selectores(Select2) pero con js</h2>
+            <!-- Pasos a seguir: 1 enlazar jquery 2 enlazar libreria select2 en el head y enlazar la libreria como script abajo del codigo -->
+            <p>
+                Selecciona tu lenguaje favorito:
+                <select name="" id="weblangs">
+                    <option value="--">--</option>
+                    <option value="1">Html</option>
+                    <option value="2">Css</option>
+                    <option value="3">JavaScript</option>
+                </select>
+            </p>
+
+            <h2>- Ckeditor</h2>
+            <p>Descripcion</p>
+            <section class="ckeditor-container">
+                <textarea name="" id="description" cols="50" rows="10"></textarea>
+            </section>
+            
+
+
+
+
+    </main>
+    <ul>
+        <h3>- Enlaces de retorno</h3>
+        <li><a href="multimedia.html">Volver al inicio Multimedia</a></li>
+        <li><a href="index.html">Volver a la pag. principal</a></li>
+    </ul>
+
+
+    <!-- Enlace Ckeditor  -->
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#description' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+    
+
+    <!-- Enlace de libreria select2 -->
+    <script>
+        $(document).ready(function() {
+            $('#weblangs').select2();
+        });
+    </script>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

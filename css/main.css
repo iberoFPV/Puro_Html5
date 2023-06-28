@@ -261,3 +261,8 @@ textarea {
   }
 }
 
+/* CKeditor */
+.ckeditor-container {
+  width: 700px; /* Ajusta el ancho según tus necesidades */
+  height: 300px; /* Ajusta la altura según tus necesidades */
+}
