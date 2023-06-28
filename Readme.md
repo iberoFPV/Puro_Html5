@@ -23,12 +23,6 @@ Semantic elements (&lt;article&gt;, &lt;section&gt;, &lt;nav&gt;, &lt;aside&gt;,
 
 Each exercise is designed to help you practice using and combining these tags to create content-rich web pages that are properly structured. 💡
 
-We invite you to visit our website at the following address: https://puro-html5.netlify.app/.
-
-On our website, we have opted for a minimalist and content-focused experience. We have exclusively relied on using HTML5 to create a simple yet effective design. This means that we have not implemented any visual CSS layers nor used any backend JavaScript functionalities.
-
-By taking this approach, we have aimed to provide a fast and efficient browsing experience. While you won't find sophisticated visual elements or dynamic interactions, we assure you that our website presents clear and accessible information.
-
 We value your time and want you to feel comfortable while navigating our web pages. If you have any questions or need assistance, please don't hesitate to contact us through the communication channels provided on our website.
 
 We hope you enjoy your visit!😊
